@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Shows a simple usage of the new Microsoft Graph Rest Client for JavaScript
+
 ## Available Scripts
 
 In the project directory, you can run:

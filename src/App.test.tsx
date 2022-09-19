@@ -1,9 +1,12 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
+import { msalInstance } from './msal-instance';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+test('renders anonymous template', async () => {
+  render(<App pca={msalInstance} />)
+  await waitFor(() => {
+    const linkElement = screen.getByText(/You are not signed in! Please sign in/i);
+    expect(linkElement).toBeInTheDocument();
+  });
 });

@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@azure/msal-browser": "^2.28.3",
+    "@azure/msal-react": "^1.4.7",
+    "@microsoft/microsoft-graph-client": "file:lib/microsoft-microsoft-graph-client-4.0.0-RestPreview.1.tgz",
+    "@microsoft/microsoft-graph-types": "file:lib/microsoft-microsoft-graph-types-3.0.0-RestPreview.1.tgz",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
